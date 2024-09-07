@@ -1,6 +1,6 @@
 {
   "name": "@iampravikant/tuya-cloud-sdk-nodejs",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "NodeJS SDK to access Tuya cloud",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iampravikant/tuya-client-sdk-nodejs.git"
+    "url": "git+https://github.com/iampravikant/tuya-cloud-sdk-nodejs.git"
   },
   "keywords": [
     "tuya",
@@ -19,9 +19,9 @@
   "author": "Pramod Ravikant",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iampravikant/tuya-client-sdk-nodejs/issues"
+    "url": "https://github.com/iampravikant/tuya-cloud-sdk-nodejs/issues"
   },
-  "homepage": "https://github.com/iampravikant/tuya-client-sdk-nodejs#readme",
+  "homepage": "https://github.com/iampravikant/tuya-cloud-sdk-nodejs#readme",
   "devDependencies": {
     "typescript": "^4.0.0"
   },
