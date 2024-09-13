@@ -8,6 +8,11 @@ class Home {
         return BasicRequestExecutor.execute(request);
     }
 
+    static async getHome(homeId) {
+        const request = new HomeApi.GetHomeApiRequest(homeId);
+        return BasicRequestExecutor.execute(request);
+    }
+
     static async deleteHome(homeId) {
         const request = new HomeApi.DeleteHomesApiRequest(homeId);
         return BasicRequestExecutor.execute(request);
