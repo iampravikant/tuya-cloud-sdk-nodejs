@@ -28,22 +28,46 @@ Example:
 TuyaConfig.init('...', '...', TuyaRegion.EU, 'eu...');
 ```
 
-### Get list of homes
+### Home
+#### Get homes
 ```typescript
 TuyaClient.Home.getHomes();
 ```
+#### Get home
+```typescript
+TuyaClient.Home.getHome(homeId);
+```
+#### Delete home
+```typescript
+TuyaClient.Home.deleteHome(homeId);
+```
 
-### Get list of devices in a home
+### Room
+#### Get rooms in a home
+```typescript
+TuyaClient.Room.getRooms(homeId);
+```
+#### Create a room in a home
+```typescript
+TuyaClient.Room.createRoom(homeId, roomnName);
+```
+#### Delete rooms in a home
+```typescript
+TuyaClient.Room.deleteRoom(homeId, roomId);
+```
+
+### Device
+#### Get devices in a home
 ```typescript
 TuyaClient.Device.getDevices(homeId);
 ```
 
-### Get the switch status of a device
+### Control device
+#### Get the switch status of a device
 ```typescript
 TuyaClient.Device.getDeviceSwitch(deviceId);
 ```
-
-### Set the switch status of a device
+#### Set the switch status of a device
 ```typescript
 TuyaClient.Device.setDeviceSwitch(deviceId, on);
 ```
