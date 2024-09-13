@@ -4,4 +4,5 @@ export interface TuyaHome {
 
 export class Home {
     static getHomes(): Promise<TuyaHome[]>;
+    static deleteHome(homeId: number): Promise<void>;
 }
