@@ -16,6 +16,22 @@ class GetHomesApiRequest extends ApiRequest {
     }
 }
 
+class GetHomeApiRequest extends ApiRequest {
+
+    constructor(homeId) {
+        super();
+        this.homeId = homeId;
+    }
+
+    getMethod() {
+        return HttpMethod.GET;
+    }
+
+    getPath() {
+        return `/v1.0/homes/${this.homeId}`;
+    }
+}
+
 class DeleteHomesApiRequest extends ApiRequest {
 
     constructor(homeId) {
@@ -34,5 +50,6 @@ class DeleteHomesApiRequest extends ApiRequest {
 
 module.exports = {
     GetHomesApiRequest,
+    GetHomeApiRequest,
     DeleteHomesApiRequest
 }
