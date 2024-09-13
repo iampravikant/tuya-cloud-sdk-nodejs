@@ -7,6 +7,11 @@ class Home {
         const request = new HomeApi.GetHomesApiRequest();
         return BasicRequestExecutor.execute(request);
     }
+
+    static async deleteHome(homeId) {
+        const request = new HomeApi.DeleteHomesApiRequest(homeId);
+        return BasicRequestExecutor.execute(request);
+    }
 }
 
 module.exports = Home;

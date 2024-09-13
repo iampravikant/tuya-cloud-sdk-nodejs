@@ -16,6 +16,23 @@ class GetHomesApiRequest extends ApiRequest {
     }
 }
 
+class DeleteHomesApiRequest extends ApiRequest {
+
+    constructor(homeId) {
+        super();
+        this.homeId = homeId;
+    }
+
+    getMethod() {
+        return HttpMethod.DELETE;
+    }
+
+    getPath() {
+        return `/v1.0/homes/${this.homeId}`;
+    }
+}
+
 module.exports = {
-    GetHomesApiRequest
+    GetHomesApiRequest,
+    DeleteHomesApiRequest
 }
